@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+#rotor {
+    width: 30%;
+    height: 30%;
+
+    animation: 1s rotation linear infinite;
+}
+
+
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#slider {
+    width: 50%;
+}

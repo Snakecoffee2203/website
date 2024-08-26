@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seite</title>
 </head>
@@ -9,12 +10,16 @@
     <h1>Neue Seite</h1>
 
     
-    <div><img src="image.png" class="rotating"></div>
+    <div><img id="rotor" src="image.png" class="rotating"></div>
+
+    <br><br><br>
 
 
-    <input type="range" min="0" max="100" value="50" class="slider" id="mySlider">
+    <input id="slider" type="range" min="0" max="1000" value="100" class="slider" id="mySlider" onclick="refreshDuration()">
 
 
     
 </body>
+
+<script src="script.js"></script>
 </html>
