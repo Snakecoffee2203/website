@@ -7,26 +7,35 @@ body {
 
 .underline {
     border: none;
+    transition: .3s;
+    font-size: 50px;
+
 
     position: relative;
+
+    margin: 0px 10px;
 }
 
 
 .underline::after {
     content: "";
     position: absolute;
+    border: 1px solid black;
 
-    width: 0;
-    height: 5%;
+    width: 0%;
+    height: 10%;
 
     top: 100%;
     left: 0;
     transition: .3s;
+
+    background-color: white;
 }
 
 .underline:hover::after {
     width: 100%;
 }
+
 
 
 
