@@ -1,0 +1,33 @@
+
+body {
+    background-color: #333;
+    color: white;
+    
+}
+
+.underline {
+    border: none;
+
+    position: relative;
+}
+
+
+.underline::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 5%;
+
+    top: 100%;
+    left: 0;
+    transition: .3s;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+
+
+
